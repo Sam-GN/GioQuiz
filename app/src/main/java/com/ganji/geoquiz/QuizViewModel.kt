@@ -1,8 +1,6 @@
 package com.ganji.geoquiz
 
-import android.util.Log
-import android.view.Gravity
-import android.widget.Toast
+
 import androidx.lifecycle.ViewModel
 
 private const val TAG = "QuizViewModel"
@@ -27,7 +25,13 @@ class QuizViewModel : ViewModel() {
      var currentIndex = 0
      val finishedQuestions = ArrayList<Int>()
      var grade = 0
-     var previousScore = 0;
+     var previousScore = 0
+     var isCheater = false
+     var cheatedQuestions = ArrayList<Int>()
+     var answerIsTrue = false
+     var cheatTokens = 3
+
+
 
     val currentQuestionAnswer: Boolean
         get() = questionBank[currentIndex].answer
@@ -70,5 +74,12 @@ class QuizViewModel : ViewModel() {
         return finishedQuestions.contains(currentIndex)
     }
 
+    fun addQuestionToCheated(){
+        cheatedQuestions.add(currentIndex)
+    }
+
+    fun useCheatToken(){
+        cheatTokens--
+    }
 
 }

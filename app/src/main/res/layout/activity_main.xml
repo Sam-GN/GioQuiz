@@ -37,23 +37,75 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/cheat_button"/>-->
+
     <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="24dp">
+
+
 
     <ImageButton
             android:id="@+id/previous_button"
-            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/previous_button"
             android:src="@drawable/arrow_left"/>
+
+
     <ImageButton
-                android:id="@+id/next_button"
+            android:id="@+id/next_button"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/next_button"
+            android:src="@drawable/arrow_right"
+    />
+
+
+    </LinearLayout>
+        <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/next_button"
-                android:src="@drawable/arrow_right"/>
+                android:orientation="vertical">
+
+        <Button
+                android:id="@+id/cheat_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cheat_button"
+                android:layout_gravity="center_horizontal"/>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/remaining_cheat_tokens"/>
+
+            <TextView
+                    android:id="@+id/remaining_tokens_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="3"
+                    android:layout_marginStart="5dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
 
 
     </LinearLayout>

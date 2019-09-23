@@ -8,7 +8,7 @@
     <string name="incorrect_toast">Incorrect!</string>
     <string name="next_button">Next</string>
     <string name="previous_button">Prev</string>
-    <string name="scoreToast">Score: </string>
+    <string name="scoreToast">Score:</string>
     <string name="question_oceans">The Pacific Ocean is larger than the Atlantic Ocean</string>
     <string name="question_mideast">The Suez Canal connects the Red Sea and the Indian Ocean</string>
     <string name="question_africa">The source of the Nile River is in Egypt</string>
@@ -19,4 +19,5 @@
     <string name="cheat_button">Cheat!</string>
     <string name="judgment_toast">Cheating is wrong.</string>
     <string name="title_activity_cheat">Cheat Activity</string>
+    <string name="remaining_cheat_tokens">Remaining Cheat Tokens: </string>
 </resources>
